@@ -1,0 +1,56 @@
+form.d-flex{  /* ------> CENTRALIZA O BOTÃO CONTACT NO LUGAR CERTO (TAMBÉM TEM UTILIDADE NO MOBILE)*/
+    width:20%;
+    justify-content: space-around;
+}
+
+div#navbarSupportedContent {
+    transition: .7s ease-in;
+}
+
+.one:hover,
+.two:hover,
+.three:hover{
+    /* color: rgb(182, 182, 4) !important; */
+    color:white !important;
+}
+
+.linkOne::before,
+.linkTwo::before,
+.linkThree::before{
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    transition: .5s ease-in;
+    transform: translateY(800%);
+}
+
+.linkOne:hover::before{
+    width:50px;
+}
+.linkTwo:hover::before{
+    width: 57px;
+}
+.linkThree:hover::before{
+    width:75px;
+}
+
+.email-password,
+.email-password:active,
+.email-password:focus{
+    background: none;
+    border:none;
+    border-bottom:2px solid #50727B;
+    box-shadow: none;
+    border-radius: 0px;
+    color:white;
+    margin-bottom: 30px;
+    margin-top: -15px;
+    font-size: 11pt;
+    font-weight: lighter;
+}
+.email-password:active,
+.email-password:focus{
+    border-color: white;
+}

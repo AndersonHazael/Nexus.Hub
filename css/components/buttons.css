@@ -1,0 +1,74 @@
+
+            /* GLOBAL CONFIGs */
+/*----------------------------------------*/
+.btn{
+    transition: .3s ease-in;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+
+            /* BTN PRIMARY */
+/*----------------------------------------*/
+.btnPrimary,
+.btnPrimary:hover,
+.btnPrimary:active,
+.btnPrimary:focus{
+    color:white;
+    border-color: #2C9986;
+    background-color: #2C9986;
+    box-shadow: 0 0 20px 1px #2C9986;
+}
+
+
+            /* BTN SECOND */
+/*----------------------------------------*/
+.btnSecond,
+.btnSecond:active,
+.btnSecond:focus,
+.btnSecond:hover{
+    color:white;
+    border:#05BFDB;
+    background-color: #05BFDB;
+}
+.btnSecond:hover{
+    transform: none;
+    box-shadow: 0 0 12px 1px #05BFDB;
+
+}
+
+
+            /* BTN THIRD */
+/*----------------------------------------*/
+.btnThird{
+    color: rgb(207, 207, 207);
+    border-color: rgb(207, 207, 207);
+    transform: scale(.9);
+    position: relative;
+    overflow: hidden;
+}
+.btnThird span{
+    position: relative;
+}
+.btnThird::before{
+    content: '';
+    background-color: rgb(207, 207, 207);
+    width:110%;
+    height: 150%;
+    position: absolute;
+    margin-top:-75%;
+    transform: translateX(-9%);
+    transition: .5s ease;
+}
+.btnThird:hover::before{
+    margin-top: -6px;
+    
+}
+.btnThird:hover{
+    transform: scale(0.9);
+    color: black;
+    border-color: rgb(207, 207, 207);
+    font-weight: normal;
+}
+
