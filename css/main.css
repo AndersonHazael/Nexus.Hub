@@ -6,7 +6,7 @@
 @import 'base/typography.css';
 @import 'base/base.css';
 
-@import './css/layout/Layout.css';
+@import '/layout/Layout.css';
 
 @import 'pages/LogIn.css';
 
